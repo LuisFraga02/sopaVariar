@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lion"
     tools:context=".focused_recipe">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        tools:text="Sopa de Cebola" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                tools:src="@drawable/sopa_cebola" />
+
+            <TextView
+                android:id="@+id/descricao_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Descrição da receita"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, leo in sollicitudin fermentum, neque lorem mollis lorem, sed laoreet nulla ex quis velit. Nulla sollicitudin malesuada dui, ac malesuada nunc lacinia vitae. Donec vel purus sit amet lacus vehicula aliquam id sed ipsum. Nam eget accumsan dolor, quis hendrerit tortor. Mauris semper vitae erat id dapibus. Suspendisse potenti. Phasellus ipsum nibh, bibendum quis leo nec, suscipit semper sem. Praesent suscipit ullamcorper nunc, eu porta ante sodales id. Sed mollis turpis nisi, nec pulvinar libero dignissim a. Etiam aliquam mollis sapien eget molestie. Curabitur finibus malesuada nisi, convallis facilisis est semper aliquet.
+
+Sed vel rhoncus risus. Aenean egestas odio pulvinar pharetra vehicula. Etiam mollis imperdiet pulvinar. Maecenas laoreet arcu ac massa aliquam malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget tempor metus. Nulla vel ligula lacinia, mollis velit id, faucibus velit. Praesent dictum non augue nec hendrerit. Donec eu eros et nulla pulvinar dapibus. Vivamus porttitor nunc sed accumsan varius. Ut suscipit, dolor in gravida gravida, mauris metus faucibus leo, sit amet tempor tellus purus ac lectus.
+
+Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arcu ac, auctor diam. Pellentesque congue dignissim lacus, vel mollis elit maximus sed. Quisque eu congue arcu. Curabitur sodales sit amet ex at tincidunt. Sed eleifend malesuada augue non elementum. Aliquam erat volutpat. Praesent lorem lorem, accumsan ut suscipit lacinia, cursus ut dui. Praesent tempus laoreet lectus at rutrum. Proin a volutpat ligula. Curabitur ac dui mauris."
+/>
+            <TextView
+                android:id="@+id/ingredients_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Ingredientes"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, leo in sollicitudin fermentum, neque lorem mollis lorem, sed laoreet nulla ex quis velit. Nulla sollicitudin malesuada dui, ac malesuada nunc lacinia vitae. Donec vel purus sit amet lacus vehicula aliquam id sed ipsum. Nam eget accumsan dolor, quis hendrerit tortor. Mauris semper vitae erat id dapibus. Suspendisse potenti. Phasellus ipsum nibh, bibendum quis leo nec, suscipit semper sem. Praesent suscipit ullamcorper nunc, eu porta ante sodales id. Sed mollis turpis nisi, nec pulvinar libero dignissim a. Etiam aliquam mollis sapien eget molestie. Curabitur finibus malesuada nisi, convallis facilisis est semper aliquet.
+
+Sed vel rhoncus risus. Aenean egestas odio pulvinar pharetra vehicula. Etiam mollis imperdiet pulvinar. Maecenas laoreet arcu ac massa aliquam malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget tempor metus. Nulla vel ligula lacinia, mollis velit id, faucibus velit. Praesent dictum non augue nec hendrerit. Donec eu eros et nulla pulvinar dapibus. Vivamus porttitor nunc sed accumsan varius. Ut suscipit, dolor in gravida gravida, mauris metus faucibus leo, sit amet tempor tellus purus ac lectus.
+
+Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arcu ac, auctor diam. Pellentesque congue dignissim lacus, vel mollis elit maximus sed. Quisque eu congue arcu. Curabitur sodales sit amet ex at tincidunt. Sed eleifend malesuada augue non elementum. Aliquam erat volutpat. Praesent lorem lorem, accumsan ut suscipit lacinia, cursus ut dui. Praesent tempus laoreet lectus at rutrum. Proin a volutpat ligula. Curabitur ac dui mauris."/>
+
+            <TextView
+                android:id="@+id/modoPreparo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Passos"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices, leo in sollicitudin fermentum, neque lorem mollis lorem, sed laoreet nulla ex quis velit. Nulla sollicitudin malesuada dui, ac malesuada nunc lacinia vitae. Donec vel purus sit amet lacus vehicula aliquam id sed ipsum. Nam eget accumsan dolor, quis hendrerit tortor. Mauris semper vitae erat id dapibus. Suspendisse potenti. Phasellus ipsum nibh, bibendum quis leo nec, suscipit semper sem. Praesent suscipit ullamcorper nunc, eu porta ante sodales id. Sed mollis turpis nisi, nec pulvinar libero dignissim a. Etiam aliquam mollis sapien eget molestie. Curabitur finibus malesuada nisi, convallis facilisis est semper aliquet.
+
+Sed vel rhoncus risus. Aenean egestas odio pulvinar pharetra vehicula. Etiam mollis imperdiet pulvinar. Maecenas laoreet arcu ac massa aliquam malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget tempor metus. Nulla vel ligula lacinia, mollis velit id, faucibus velit. Praesent dictum non augue nec hendrerit. Donec eu eros et nulla pulvinar dapibus. Vivamus porttitor nunc sed accumsan varius. Ut suscipit, dolor in gravida gravida, mauris metus faucibus leo, sit amet tempor tellus purus ac lectus.
+
+Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arcu ac, auctor diam. Pellentesque congue dignissim lacus, vel mollis elit maximus sed. Quisque eu congue arcu. Curabitur sodales sit amet ex at tincidunt. Sed eleifend malesuada augue non elementum. Aliquam erat volutpat. Praesent lorem lorem, accumsan ut suscipit lacinia, cursus ut dui. Praesent tempus laoreet lectus at rutrum. Proin a volutpat ligula. Curabitur ac dui mauris."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

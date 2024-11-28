@@ -6,11 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lion"
     tools:context=".Tela2">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="sopaVariar seu app de receitas 😋" />
 
     <LinearLayout

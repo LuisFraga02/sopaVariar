@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var user : EditText
     lateinit var pass : EditText
     lateinit var loginButton : Button
+    lateinit var cadastroButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,14 +21,23 @@ class MainActivity : AppCompatActivity() {
         user = findViewById(R.id.userid)
         pass = findViewById(R.id.pass)
         loginButton = findViewById(R.id.loginButton)
+        cadastroButton = findViewById(R.id.cadastroButton)
+
+        cadastroButton.setOnClickListener{
+            var intent = Intent(applicationContext, cadastro::class.java)
+            startActivity(intent)
+        }
+
 
         loginButton.setOnClickListener{
-            if (user.text.toString() != "qualquercoisa" &&
-                pass.text.toString() != "qualquercoisa"){
-                Toast.makeText(this,"Foi!",Toast.LENGTH_LONG).show()
-                var intent = Intent(applicationContext, Tela2::class.java)
-                startActivity(intent)
-            }
+            var intent = Intent(applicationContext, Tela2::class.java)
+            startActivity(intent)
+//            if (user.text.toString() != "qualquercoisaqualquercoisa" &&
+//                pass.text.toString() != "qualquercoisaqualquercoisa"){
+//                Toast.makeText(this,"entrando como "+user.text.toString(),Toast.LENGTH_LONG).show()
+//                var intent = Intent(applicationContext, Tela2::class.java)
+//                startActivity(intent)
+//            }
         }
 
     }
