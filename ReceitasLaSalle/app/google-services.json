@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260381587783",
+    "project_id": "sopavariar",
+    "storage_bucket": "sopavariar.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260381587783:android:06cc1b04d0c47ea2393462",
+        "android_client_info": {
+          "package_name": "com.example.receitaslasalle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPNU6nn5xtvEjklWilYy1qpGBHQAJ5Dco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
