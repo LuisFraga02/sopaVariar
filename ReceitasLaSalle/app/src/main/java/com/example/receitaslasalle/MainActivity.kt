@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var user : EditText
-    lateinit var pass : EditText
-    lateinit var loginButton : Button
-    lateinit var cadastroButton : Button
+    lateinit var user: EditText
+    lateinit var pass: EditText
+    lateinit var loginButton: Button
+    lateinit var cadastroButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,18 +23,18 @@ class MainActivity : AppCompatActivity() {
         loginButton = findViewById(R.id.loginButton)
         cadastroButton = findViewById(R.id.cadastroButton)
 
-        cadastroButton.setOnClickListener{
+        cadastroButton.setOnClickListener {
             var intent = Intent(applicationContext, cadastro::class.java)
             startActivity(intent)
         }
 
 
-        loginButton.setOnClickListener{
+        loginButton.setOnClickListener {
             var intent = Intent(applicationContext, Tela2::class.java)
             startActivity(intent)
 //            if (user.text.toString() != "qualquercoisaqualquercoisa" &&
 //                pass.text.toString() != "qualquercoisaqualquercoisa"){
-//                Toast.makeText(this,"entrando como "+user.text.toString(),Toast.LENGTH_LONG).show()
+//
 //                var intent = Intent(applicationContext, Tela2::class.java)
 //                startActivity(intent)
 //            }

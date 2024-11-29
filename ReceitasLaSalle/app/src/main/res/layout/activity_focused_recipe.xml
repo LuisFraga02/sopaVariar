@@ -36,6 +36,19 @@
                 tools:src="@drawable/sopa_cebola" />
 
             <TextView
+                android:id="@+id/tempo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="tempo de preparo:"/>
+            <TextView
+                android:id="@+id/tempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="tempo de preparp"/>
+
+            <TextView
                 android:id="@+id/descricao_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,6 +58,7 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/descricao2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -53,8 +67,8 @@
 
 Sed vel rhoncus risus. Aenean egestas odio pulvinar pharetra vehicula. Etiam mollis imperdiet pulvinar. Maecenas laoreet arcu ac massa aliquam malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget tempor metus. Nulla vel ligula lacinia, mollis velit id, faucibus velit. Praesent dictum non augue nec hendrerit. Donec eu eros et nulla pulvinar dapibus. Vivamus porttitor nunc sed accumsan varius. Ut suscipit, dolor in gravida gravida, mauris metus faucibus leo, sit amet tempor tellus purus ac lectus.
 
-Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arcu ac, auctor diam. Pellentesque congue dignissim lacus, vel mollis elit maximus sed. Quisque eu congue arcu. Curabitur sodales sit amet ex at tincidunt. Sed eleifend malesuada augue non elementum. Aliquam erat volutpat. Praesent lorem lorem, accumsan ut suscipit lacinia, cursus ut dui. Praesent tempus laoreet lectus at rutrum. Proin a volutpat ligula. Curabitur ac dui mauris."
-/>
+Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arcu ac, auctor diam. Pellentesque congue dignissim lacus, vel mollis elit maximus sed. Quisque eu congue arcu. Curabitur sodales sit amet ex at tincidunt. Sed eleifend malesuada augue non elementum. Aliquam erat volutpat. Praesent lorem lorem, accumsan ut suscipit lacinia, cursus ut dui. Praesent tempus laoreet lectus at rutrum. Proin a volutpat ligula. Curabitur ac dui mauris." />
+
             <TextView
                 android:id="@+id/ingredients_title"
                 android:layout_width="wrap_content"
@@ -65,6 +79,7 @@ Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arc
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/ingredients"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -84,6 +99,7 @@ Praesent venenatis tortor ac ex egestas ornare. Duis id neque congue, mattis arc
                 android:text="Passos"
                 android:textSize="18sp" />
             <TextView
+                android:id="@+id/modoPreparo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
